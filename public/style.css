@@ -1,0 +1,135 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@100&display=swap');
+*{
+    margin: 0;
+}
+
+    /*LOGIN CADASTRO*/
+
+.enter{
+    background-image: radial-gradient(rgb(178, 218, 214) ,rgb(255, 255, 255));
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    position: absolute;
+}
+.content{
+    height: 50vh;
+    width: 40vw;
+    background-color: white;
+    margin: 25vh auto;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.377);
+}
+.banner{
+    width: 40%;
+    background-image: url(midia/canva.png);
+    background-size: cover;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 10px;
+    width: 50%;
+}
+.form{
+    font-size: 18px;
+    width: 100%;
+}
+.form input{
+    width: 100%;
+    margin-left: 12px;
+    border-radius: 10px;
+    height: 18px;
+    border-color: #800a0a;
+    text-align: center;
+}
+.card button{
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(255, 123, 0);
+    font-weight: bold;
+    border-color: rgb(255, 255, 255);
+    transition: 0.2s;
+}
+.card button:hover{
+    background-color: rgb(253, 153, 59);
+} 
+.card a:hover{
+    color:rgb(255, 123, 0);
+}
+.card a{
+    text-decoration: none;
+    color: #000;
+    transition: 0.2s;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+    /* HEADER */
+
+header{
+    background: linear-gradient(to bottom,#000,#2d2d2d);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 999;
+    height: 9vh;
+}
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    justify-content: space-between;
+    list-style: none;
+    padding-top: 2px;
+}
+header a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+header a:hover{
+    color: rgb(255, 94, 0);
+    text-decoration: underline;
+    text-decoration-thickness: 2.5px;
+    text-decoration-color: rgb(255, 30, 0);
+}
+header nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/*main .destaques{
+    background-image: linear-gradient(to bottom, rgb(255, 94, 0) 50%, white );
+    width: 100vw;
+    margin-top: 9vh;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+main .destaques img{
+    height: 120px;
+    padding: 5px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.664);
+    transition: height 0.1s;
+}
+.destaques img:hover{
+    height: 110px;
+}*/
+
+
