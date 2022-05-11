@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@100&display=swap');
 *{
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
     /*LOGIN CADASTRO*/
@@ -18,7 +19,7 @@
 }
 .content{
     height: 70vh;
-    width: 60vw;
+    width: 50vw;
     background-color: white;
     z-index: 1;
     position: relative;
@@ -26,9 +27,9 @@
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.377);
 }
 .banner{
-    width: 40%;
+    width: 30%;
     background-image: url(midia/canva.png);
-    background-size: 80%;
+    background-size: cover;
 }
 .card{
     display: flex;
@@ -36,7 +37,7 @@
     align-items: center;
     justify-content: space-around;
     margin-left: 10px;
-    width: 50%;
+    width: 60%;
 }
 .form{
     font-size: 18px;
@@ -89,7 +90,7 @@
   cursor: pointer;
 }
 
-    /* HEADER */
+    /* SIDENAV */
 
  .sidenav {
     height: 100%;
