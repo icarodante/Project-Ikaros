@@ -8,26 +8,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <a href="#"><img src="midia/logo.png" width="190px"></a>
-        <nav>
-            <ul>
-                <li><a href="#">Teatros</a></li>
-                <li><a href="#">Peças</a></li>
-                <li><a href="#">Broadway</a></li>
-                <li><a href="#">Cadastre-se</a></li>
-                <li><a href="#">Entrar</a></li>
-            </ul>
-        </nav>
-        <div>
-            <img src="midia/icons8-linha-vertical-50.png" width="30px">
-            <a href="#"><img src="midia/icons8-instagram-24.png"></a>
-            <a href="#"><img src="midia/icons8-facebook-24.png" width="24px"></a>
-            <a href="#"><img src="midia/icons8-twitter-24.png" width="24px"></a>
-        </div>
-    </header>
+    <div id="mySidenav" class="sidenav">
+        <img src="midia/logo.png">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Minha conta</a>
+        <a href="#">Sair</a>
+        <hr>
+        <a href="#">Teatros</a>
+        <a href="#">Obras</a>
+      </div>
+    <span onclick="openNav()" class="menu">&#9776</span>
     <main>
-       <div class="destaques">
+        <div class="destaques">
         <a href=""><img src="https://abroadwayeaqui.com.br/wp-content/uploads/2021/11/IMG_20211105_121211_511-300x300.jpg"></a>
         <a href=""><img src="https://chicagomusical.com.br/wp-content/uploads/2022/02/CGF0856.jpg"></a>
         <a href=""><img src="https://abroadwayeaqui.com.br/wp-content/uploads/2021/12/1638554284787-1-300x300.jpg"></a>
@@ -37,5 +29,18 @@
         <a href=""><img src="https://abroadwayeaqui.com.br/wp-content/uploads/2022/04/wp-1650242333741-300x300.jpg" alt="Nautopia"></a>
        </div>
     </main>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure explicabo, quos eveniet dolores natus suscipit beatae perspiciatis ut repudiandae necessitatibus. Facilis, soluta non sapiente et at dolor repellat maxime minima?
+    Dicta sint fuga eveniet ipsa aperiam qui, eos veritatis harum, fugiat nisi rem vitae saepe? Voluptatum maiores soluta dolorum amet tempora nostrum doloremque molestiae fugiat commodi! Laudantium perferendis ipsa repudiandae.
+    Fugiat temporibus earum similique est officiis nihil quos, possimus ut omnis ipsam deleniti mollitia. Velit delectus saepe debitis, libero dolores possimus. Eligendi autem possimus tempora, sunt sit vitae exercitationem asperiores?Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magnam sapiente odit pariatur? Officiis impedit nam quod eaque, error rem, natus quo magni non porro dolore facilis quibusdam necessitatibus nostrum ea aliquam architecto numquam. Dignissimos neque corrupti a expedita eligendi? Exercitationem dolorum qui saepe illo est maiores excepturi, esse placeat quod fugiat quidem ullam corrupti veritatis nulla expedita alias consequatur? Exercitationem doloribus dicta tempora maiores ratione sunt voluptas consectetur quas. Debitis recusandae blanditiis reprehenderit, sed excepturi laudantium modi dolores placeat porro error, minus rem qui.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti molestiae ipsum fugiat nihil ratione. Dolores expedita nesciunt sunt id necessitatibus quas ab minus illo assumenda, quis voluptas quam mollitia doloribus.
 </body>
 </html>
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
