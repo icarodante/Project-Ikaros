@@ -90,6 +90,10 @@
     margin: 10px;
     z-index: 8;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.menu:hover{
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.432);
 }
 
     /* SIDENAV */
