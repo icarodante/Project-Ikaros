@@ -20,15 +20,15 @@
                     <label for="inpt_user">Nome</label> <br>
                     <input type="text" id="inpt_nome"> <br>
                     <label for="inpt_user">Sobrenome</label> <br>
-                    <input type="text" id="inpt_nome"> <br>
+                    <input type="text" id="inpt_sobrenome"> <br>
                     <label for="inpt_user">Email</label> <br>
                     <input type="text" id="inpt_email"> <br> 
                     <label for="inpt_senha">Senha</label> <br>
                     <input type="password" id="inpt_senha"> <br>
                     <label for="inpt_senha">Confirme sua senha</label> <br>
-                    <input type="password" id="inpt_senha">
+                    <input type="password" id="confirmacao_senha_input">
                 </div>
-                <button>
+                <button onclick="cadastrar()">
                     Cadastre-se
                 </button>
                 <a href="login.html">Já possui uma conta?</a>
@@ -37,3 +37,31 @@
     </div>
 </body>
 </html>
+<script>
+     function cadastrar() {
+        var nomeVar = inpt_nome.value;
+        var sobrenomeVar = inpt_sobrenome.value;
+        var emailVar = inpt_email.value;
+        var senhaVar = inpt_senha.value;
+        var confirmacaoSenhaVar = confirmacao_senha_input.value;
+
+        if (nomeVar == "" ||sobrenomeVar == ""|| emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
+           alert("preencha todos os campos")
+        }
+
+        // Enviando o valor da nova input
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                nomeServer: nomeVar,
+                sobrenomeServer: sobrenomeVar,
+                emailServer: emailVar,
+                senhaServer: senhaVar
+            })
+        })
+        window.location.href = "login.html"
+        }
+</script>

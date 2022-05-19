@@ -7,13 +7,14 @@
     <title>Ikaros - Página Inicial</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="midia/favicon-32x32.png" type="image/x-icon">
+    <script src="script.js"></script>
 </head>
-<body>
+<body onload="validarSessao()">
     <div id="mySidenav" class="sidenav">
         <img src="midia/logo.png">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#">Minha conta</a>
-        <a href="#">Sair</a>
+        <a onclick="limparSessao()">Sair</a>
         <hr>
         <a href="#">Teatros</a>
         <a href="#">Obras</a>
@@ -36,6 +37,7 @@
 </body>
 </html>
 <script>
+    b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
     function openNav() {
       document.getElementById("mySidenav").style.width = "225px";
     }
@@ -43,5 +45,6 @@
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
     }
+    
     
 </script>

@@ -9,7 +9,7 @@
     /*LOGIN CADASTRO*/
 
 .enter{
-    background-image: radial-gradient(rgb(178, 218, 214) ,rgb(255, 255, 255));
+    background-image: radial-gradient(rgb(136, 214, 206) ,rgb(255, 255, 255));
     width: 100vw;
     height: 100vh;
     z-index: 0;
@@ -20,6 +20,7 @@
 }
 .content{
     height: 70vh;
+    border: 1px solid rgb(100, 158, 152);
     width: 50vw;
     background-color: white;
     z-index: 1;
@@ -144,7 +145,7 @@ main .destaques{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    position: absolute;
+    position: fixed;
     z-index: 0;
 
 }
