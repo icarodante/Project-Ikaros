@@ -48,8 +48,10 @@
         if (nomeVar == "" ||sobrenomeVar == ""|| emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
            alert("preencha todos os campos")
         }
+        else{
+            window.location.href = "login.html"
 
-        // Enviando o valor da nova input
+        // Enviando o valor das input's
         fetch("/usuarios/cadastrar", {
             method: "POST",
             headers: {
@@ -62,6 +64,6 @@
                 senhaServer: senhaVar
             })
         })
-        window.location.href = "login.html"
+        }
         }
 </script>

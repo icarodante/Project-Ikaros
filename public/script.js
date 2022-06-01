@@ -47,5 +47,19 @@ function fecharModal() {
     var divModal = document.getElementById("div_modal");
     divModal.style.display = "none";
 }
+b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
+function openNav() {
+  document.getElementById("mySidenav").style.width = "225px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
 
 
+function curtir(id){
+    if (id == 'nautopia'){
+        curtidasnau++
+        nautopiahearts.innerHTML = curtidasnau
+    }
+}
