@@ -7,6 +7,7 @@
     <title>Cadastre-se - Ikaros</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="midia/favicon-32x32.png" type="image/x-icon">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="enter">
@@ -37,33 +38,3 @@
     </div>
 </body>
 </html>
-<script>
-     function cadastrar() {
-        var nomeVar = inpt_nome.value;
-        var sobrenomeVar = inpt_sobrenome.value;
-        var emailVar = inpt_email.value;
-        var senhaVar = inpt_senha.value;
-        var confirmacaoSenhaVar = confirmacao_senha_input.value;
-
-        if (nomeVar == "" ||sobrenomeVar == ""|| emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
-           alert("preencha todos os campos")
-        }
-        else{
-            window.location.href = "login.html"
-
-        // Enviando o valor das input's
-        fetch("/usuarios/cadastrar", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                nomeServer: nomeVar,
-                sobrenomeServer: sobrenomeVar,
-                emailServer: emailVar,
-                senhaServer: senhaVar
-            })
-        })
-        }
-        }
-</script>
