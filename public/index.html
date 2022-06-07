@@ -1,41 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ikaros - Página Inicial</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="midia/favicon-32x32.png" type="image/x-icon">
-    <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ikaros - Página Inicial</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="midia/favicon-32x32.png" type="image/x-icon">
+  <script src="script.js"></script>
 </head>
-<body onload="validarSessao()">
-    <div id="mySidenav" class="sidenav">
-        <img src="midia/logo.png">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-         <a href=""> Olá, <b id="b_usuario"></b></a>
-        <a href="#">Minha conta</a>
-        <a onclick="limparSessao()">Sair</a>
-        <hr>
-        <a href="#">Teatros</a>
-        <a href="#">Obras</a>
-      </div>
-    <span onclick="openNav()" class="menu">&#9776</span>
-    <a href="#inicio"><img src="midia/icons8-scroll-up-60.png" class="subir"></a>
-    <main>
-        <div class="destaques" id="inicio">
-        <a href="#addams"><img src="https://abroadwayeaqui.com.br/wp-content/uploads/2021/11/IMG_20211105_121211_511-300x300.jpg"></a>
-        <a href="#chicago"><img src="https://chicagomusical.com.br/wp-content/uploads/2022/02/CGF0856.jpg"></a>
-        <a href="#sweeney"><img src="https://abroadwayeaqui.com.br/wp-content/uploads/2021/12/1638554284787-1-300x300.jpg"></a>
-        <a href="#grase"><img src="https://abroadwayeaqui.com.br/wp-content/uploads/2022/03/Grease.jpg"></a>
-        <a href="#ascang"><img src="https://abroadwayeaqui.com.br/wp-content/uploads/2021/09/PicsArt_09-23-09.00.27-300x300.jpg"></a>
-        <a href="#morteevida"><img src="https://abroadwayeaqui.com.br/wp-content/uploads/2022/02/Picsart_22-02-25_00-05-50-348-300x300.jpg" alt="Morte e vida severina"></a>
-        <a href="#nautopia"><img src="https://abroadwayeaqui.com.br/wp-content/uploads/2022/04/wp-1650242333741-300x300.jpg" alt="Nautopia"></a>
-       </div>
-    </main>
-    <div class="painel">
-      <img src="midia/banner.jpg" >
+<body onload="validarSessao()" class="fundo">
+  <div id="mySidenav" class="sidenav">
+    <img src="midia/logo.png">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a style="pointer-events: none; font-size: 20px;"> Olá, <b id="b_usuario"></b></a>
+    <a href="#">Minha conta</a>
+    <a onclick="limparSessao()" style="cursor: pointer;">Sair</a>
+    <hr>
+    <a href="#">Teatros</a>
+    <a href="#">Obras</a>
+  </div>
+  <span onclick="openNav()" class="menu">&#9776</span>
+  <a href="#inicio"><img src="midia/icons8-scroll-up-60.png" class="subir"></a>
+  <main>
+    <div class="destaques" id="inicio">
+      <a href="#addams"><img
+          src="https://abroadwayeaqui.com.br/wp-content/uploads/2021/11/IMG_20211105_121211_511-300x300.jpg"></a>
+      <a href="#chicago"><img src="https://chicagomusical.com.br/wp-content/uploads/2022/02/CGF0856.jpg"></a>
+      <a href="#sweeney"><img
+          src="https://abroadwayeaqui.com.br/wp-content/uploads/2021/12/1638554284787-1-300x300.jpg"></a>
+      <a href="#grase"><img src="https://abroadwayeaqui.com.br/wp-content/uploads/2022/03/Grease.jpg"></a>
+      <a href="#ascang"><img
+          src="https://abroadwayeaqui.com.br/wp-content/uploads/2021/09/PicsArt_09-23-09.00.27-300x300.jpg"></a>
+      <a href="#morteevida"><img
+          src="https://abroadwayeaqui.com.br/wp-content/uploads/2022/02/Picsart_22-02-25_00-05-50-348-300x300.jpg"
+          alt="Morte e vida severina"></a>
+      <a href="#nautopia"><img
+          src="https://abroadwayeaqui.com.br/wp-content/uploads/2022/04/wp-1650242333741-300x300.jpg"
+          alt="Nautopia"></a>
     </div>
+  </main>
+  <div class="painel">
+    <img src="midia/banner.jpg">
+  </div>
     <article>
       <div id="nautopia">
         <div class="details">
@@ -44,8 +52,9 @@
             <div class="text">
               <p>Gêneros: Musical, Teatro, Espaço, Reflexões</p> <br>
               <div>
-                  <img src="midia/icons8-heart-50.png" onclick="curtir('imgnautopia')" id="imgnautopia" style="width: 20px; height: 20px;">
-                  <p><span id="nautopiahearts">0</span> Curtidas</p>
+                <img src="midia/icons8-heart-50.png" onclick="curtir('imgnautopia')" id="imgnautopia"
+                  style="width: 25px; height: 25px;">
+                <p><span id="nautopiahearts">0</span> Curtidas</p>
               </div>
             </div>
           </div>
@@ -53,135 +62,202 @@
         <div class="texto">
           <h2>Nautopia</h2> <br>
           <p>Primeiro grande musical do Teatro B32, inaugurado há poucos meses na Faria Lima,
-             “Nautopia” chega para uma curta temporada a partir do dia 1º de abril. O espetáculo 
-             brasileiro foi produzido pela Pulsar Ideias, Eureka Entretenimento e H Produções Culturais
-             e dirigido por Daniel Salve, que traz no currículo produções que fazem com que seu nome se
-             funda ao processo de revitalização do teatro musical brasileiro em meados da década de 2000.</p>
-            <br>
-            <p>Na obra, o multiartista, que pode ser conhecido ainda por outros marcos de carreira, como
-               integrar o elenco de “Rent”, em 1999, ou pela direção artística de espetáculos da Walt Disney
-              Company no Brasil há 17 anos, assina o texto, o score original (com 24 composições inéditas) 
-              e a direção geral da montagem, que conta ainda com direção musical de Diego Salles e direção de
-              movimento de Olívia Branco.</p>
+            “Nautopia” chega para uma curta temporada a partir do dia 1º de abril. O espetáculo
+            brasileiro foi produzido pela Pulsar Ideias, Eureka Entretenimento e H Produções Culturais
+            e dirigido por Daniel Salve, que traz no currículo produções que fazem com que seu nome se
+            funda ao processo de revitalização do teatro musical brasileiro em meados da década de 2000.</p>
+          <br>
+          <p>Na obra, o multiartista, que pode ser conhecido ainda por outros marcos de carreira, como
+            integrar o elenco de “Rent”, em 1999, ou pela direção artística de espetáculos da Walt Disney
+            Company no Brasil há 17 anos, assina o texto, o score original (com 24 composições inéditas)
+            e a direção geral da montagem, que conta ainda com direção musical de Diego Salles e direção de
+            movimento de Olívia Branco.</p>
         </div>
       </div>
-        <div>
-          <div class="texto">
-            <h2 id="morteevida">Morte e vida Severina</h2> <br>
-            <p>Com uma hora e meia de espetáculo, “Morte e Vida Severina” representa – segundo Roberto Freire – o pensamento universitário livre do Brasil. Composta por estudantes da Pontifícia Universidade Católica de São Paulo (PUC-SP), em 32 espetáculos conseguiu reunir 17.500 espectadores, transformando-se num grande sucesso, que lhe rendeu a participação no IV Festival Internacional de Teatro Universitário em Nancy. Para a escolha da peça os estudantes passaram três meses fazendo pesquisa no Nordeste, analisando seus aspectos socilógicos, geográficos, economicos, etc. Os estudantes da PUC tinham a inteção de despertar nos demais o interesse pelo teatro como meio de expressão e comunicação.
-            </p><br><p>A peça escolhida pelo grupo “Morte e Vida Severina”, escrita pelo pernambucano João Cabral de Melo Neto, em 1955, leva um nome que faz grande alusão à todo o sofrimento presente na história de Severino, um migrante que busca uma vida melhor no litoral. Ao longo da história, Severino se depara com diversos tipos nordestinos, sendo sempre rodeado pelo drama da seca – também encontrado em Graciliano Ramos com Vidas Secas.</p>
-          </div>
-          <div class="details">
-            <img src="https://j.pucsp.br/sites/default/files/foto-12-2048x1316_0.jpg" class="image">
-            <div class="overlay">
-              <div class="text">
-                <p>Gêneros:<h5> Poema, Historia, Nacional</h5></p> <br>
-                <div>
-                    <img src="midia/icons8-heart-50.png" onclick="curtir('imgmrt')" id="imgmrt" style="width: 20px; height: 20px;">
-                    <p><span id="mrthearts">0</span> Curtidas</p>
-                </div>
+      <div>
+        <div class="texto">
+          <h2 id="morteevida">Morte e vida Severina</h2> <br>
+          <p>Com uma hora e meia de espetáculo, “Morte e Vida Severina” representa – segundo Roberto Freire – o pensamento
+            universitário livre do Brasil. Composta por estudantes da Pontifícia Universidade Católica de São Paulo
+            (PUC-SP), em 32 espetáculos conseguiu reunir 17.500 espectadores, transformando-se num grande sucesso, que lhe
+            rendeu a participação no IV Festival Internacional de Teatro Universitário em Nancy. Para a escolha da peça os
+            estudantes passaram três meses fazendo pesquisa no Nordeste, analisando seus aspectos socilógicos,
+            geográficos, economicos, etc. Os estudantes da PUC tinham a inteção de despertar nos demais o interesse pelo
+            teatro como meio de expressão e comunicação.
+          </p><br>
+          <p>A peça escolhida pelo grupo “Morte e Vida Severina”, escrita pelo pernambucano João Cabral de Melo Neto, em
+            1955, leva um nome que faz grande alusão à todo o sofrimento presente na história de Severino, um migrante que
+            busca uma vida melhor no litoral. Ao longo da história, Severino se depara com diversos tipos nordestinos,
+            sendo sempre rodeado pelo drama da seca – também encontrado em Graciliano Ramos com Vidas Secas.</p>
+        </div>
+        <div class="details">
+          <img src="https://j.pucsp.br/sites/default/files/foto-12-2048x1316_0.jpg" class="image">
+          <div class="overlay">
+            <div class="text">
+              <p>Gêneros:
+              <h5> Poema, Historia, Nacional</h5>
+              </p> <br>
+              <div>
+                <img src="midia/icons8-heart-50.png" onclick="curtir('imgmrt')" id="imgmrt"
+                  style="width: 25px; height: 25px;">
+                <p><span id="mrthearts">0</span> Curtidas</p>
               </div>
             </div>
           </div>
         </div>
-        <div id="ascang">
-          <div class="details">
-            <img src="https://siterg.uol.com.br/wp-content/uploads/2022/03/2CANGACEIRAS-e1648140755375.jpeg" class="image">
-            <div class="overlay">
-              <div class="text">
-                <p>Gêneros:<h5> Poema, Historia, Nacional, Cordel</h5></p> <br>
-                <div>
-                  <img src="midia/icons8-heart-50.png" onclick="curtir('imgascang')" id="imgascang" style="width: 20px; height: 20px;">
-                  <p><span id="ascangheats">0</span> Curtidas</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="texto">
-            <h2>As Cangaceiras Guerreiras do Sertão</h2> <br>
-              <p>As Cangaceiras Guerreiras do Sertão é uma fábula inspirada em depoimentos de mulheres que seguiam os bandos nordestinos (o Cangaço), que atuavam contra a desigualdade social da região. É um teatro musical que exalta a força da mulher nordestina.
-
-                O musical conta a história de um grupo de mulheres que se rebelam contra mecanismos de opressão que encontravam dentro do próprio cangaço. Além de reflexões sobre o conceito de justiça social que o cangaço representava, o espetáculo reflete sobre as forças do feminino nesse espaço de libertação e sobre nossa ideia de cidadania e heroísmo. Canções originais foram compostas para a produção, inspirando-se em ritmos da cultura nordestina.</p> <br>
-                <p>As canções originais foram compostas por Fernanda Maia (melodia) e Newton Moreno (letras), inspirados em ritmos da cultura nordestina.</p>
-          </div> 
-        </div>
-        <div>
-          <div class="texto">
-            <h2 id="grase">Grease</h2> <br>
-            <p>Na Califórnia de 1959, a popular Sandy e o metido Danny se apaixonam e aproveitam um verão inesquecível na praia. Quando voltam às aulas, eles descobrem que frequentam a mesma escola. Danny lidera a gangue do Burguer Palace Boys, um grupo que gosta de jaquetas de couro e muito gel no cabelo, e Sandy passa tempo com as Pink Ladies, lideradas pela firme e sarcástica Rizzo. Quando os dois se reúnem, Sandy percebe que Danny não é o mesmo por quem se apaixonou e, por isso, ambos precisam mudar caso queiram ficar juntos.</p> <br>
-            <p>Para a primeira adaptação oficial brasileira de Grease – o musical, Ricardo Marques (responsável pelas montagens oficiais tanto em São Paulo quanto em Londres) prepara um show recheado de hits eternizados no filme e algumas composições inéditas. Por aqui, a montagem ganha versão com músicas em português e, ao final da apresentação, o elenco voltará ao palco para uma grande festa em que cantará as principais canções nas versões originais em inglês.</p>
-          </div>
-          <div class="details">
-            <img src="https://abroadwayeaqui.com.br/wp-content/uploads/2016/05/elenco-grease-scaled.jpg" alt="Avatar" class="image">
-            <div class="overlay">
-              <div class="text">
-                <p>Gêneros:<h5> Filme musical, Romance, Comédia, Adolescente</h5></p> <br>
-                <div>
-                  <img src="midia/icons8-heart-50.png" onclick="curtir('imggrease')" id="imggrease" style="width: 20px; height: 20px;">
-                  <p><span id="greasehearts">0</span> Curtidas</p>
-              </div>
+      </div>
+      <div id="ascang">
+        <div class="details">
+          <img src="https://siterg.uol.com.br/wp-content/uploads/2022/03/2CANGACEIRAS-e1648140755375.jpeg" class="image">
+          <div class="overlay">
+            <div class="text">
+              <p>Gêneros:
+              <h5> Poema, Historia, Nacional, Cordel</h5>
+              </p> <br>
+              <div>
+                <img src="midia/icons8-heart-50.png" onclick="curtir('imgascang')" id="imgascang"
+                  style="width: 25px; height: 25px;">
+                <p><span id="ascanghearts">0</span> Curtidas</p>
               </div>
             </div>
           </div>
         </div>
-        <div id="sweeney">
-          <div class="details">
-            <img src="https://assets.bileto.sympla.com.br/eventmanager/production/2p2rcdaeu7t0srnj9umlr4g2stg5qa491ebd2d7e1ks504t2ac0chrd38vl37vjalq1v7sk6rv3knhm6irq704nnv2gtje7cquh8jpd.webp" alt="Avatar" class="image">
-            <div class="overlay">
-              <div class="text">
-                <p>Gêneros: Musical, Teatral, Terror, Criminal</p> <br>
-                <div>
-                    <img src="midia/icons8-heart-50.png" onclick="curtir('imgsweeney')" id="imgnsweeney" style="width: 20px; height: 20px;">
-                    <p><span id="sweeneyhearts">0</span> Curtidas</p>
-                </div>
+        <div class="texto">
+          <h2>As Cangaceiras Guerreiras do Sertão</h2> <br>
+          <p>As Cangaceiras Guerreiras do Sertão é uma fábula inspirada em depoimentos de mulheres que seguiam os bandos
+            nordestinos (o Cangaço), que atuavam contra a desigualdade social da região. É um teatro musical que exalta a
+            força da mulher nordestina.
+            O musical conta a história de um grupo de mulheres que se rebelam contra mecanismos de opressão que
+            encontravam dentro do próprio cangaço. Além de reflexões sobre o conceito de justiça social que o cangaço
+            representava, o espetáculo reflete sobre as forças do feminino nesse espaço de libertação e sobre nossa ideia
+            de cidadania e heroísmo. Canções originais foram compostas para a produção, inspirando-se em ritmos da cultura
+            nordestina.</p> <br>
+          <p>As canções originais foram compostas por Fernanda Maia (melodia) e Newton Moreno (letras), inspirados em
+            ritmos da cultura nordestina.</p>
+        </div>
+      </div>
+      <div>
+        <div class="texto">
+          <h2 id="grase">Grease</h2> <br>
+          <p>Na Califórnia de 1959, a popular Sandy e o metido Danny se apaixonam e aproveitam um verão inesquecível na
+            praia. Quando voltam às aulas, eles descobrem que frequentam a mesma escola. Danny lidera a gangue do Burguer
+            Palace Boys, um grupo que gosta de jaquetas de couro e muito gel no cabelo, e Sandy passa tempo com as Pink
+            Ladies, lideradas pela firme e sarcástica Rizzo. Quando os dois se reúnem, Sandy percebe que Danny não é o
+            mesmo por quem se apaixonou e, por isso, ambos precisam mudar caso queiram ficar juntos.</p> <br>
+          <p>Para a primeira adaptação oficial brasileira de Grease – o musical, Ricardo Marques (responsável pelas
+            montagens oficiais tanto em São Paulo quanto em Londres) prepara um show recheado de hits eternizados no filme
+            e algumas composições inéditas. Por aqui, a montagem ganha versão com músicas em português e, ao final da
+            apresentação, o elenco voltará ao palco para uma grande festa em que cantará as principais canções nas versões
+            originais em inglês.</p>
+        </div>
+        <div class="details">
+          <img src="https://abroadwayeaqui.com.br/wp-content/uploads/2016/05/elenco-grease-scaled.jpg" alt="Avatar"
+            class="image">
+          <div class="overlay">
+            <div class="text">
+              <p>Gêneros:
+              <h5> Filme musical, Romance, Comédia, Adolescente</h5>
+              </p> <br>
+              <div>
+                <img src="midia/icons8-heart-50.png" onclick="curtir('imggrease')" id="imggrease"
+                  style="width: 25px; height: 25px;">
+                <p><span id="greasehearts">0</span> Curtidas</p>
               </div>
             </div>
           </div>
-          <div class="texto">
-            <h2>Sweeney Todd</h2> <br>
-            <p>O musical conta a história de Benjamin Barker, barbeiro que se viu obrigado a ir embora de Londres por conta de uma briga com o cruel Juiz Turpin (Guilherme Sant'Anna). Após 15 anos afastado da cidade ele retorna sob o pseudônimo Sweeney Todd (Rodrigo Lombardi) e sedento por vingança. Ao chegar ao lugar onde funcionava sua antiga barbearia, na Rua Fleet, Todd se depara com uma arruinada loja de tortas administrada pela Dona Lovett (Andrezza Massei). A partir daí, Todd e Lovett unem forças para que ele se vingue de Turpin e ela, bem... para que ela faça sua loja crescer com tortas recheadas de ingredientes muito suspeitos.</p>
-<br>
-              <p>A adaptação para o país conta com direção musical de Fernanda Maia e direção geral de Zé Henrique de Paula. A produção executiva é de Adriana Del Claro.</p>
-          </div>
         </div>
-        <div>
-          <div class="texto">
-            <h2 id="chicago">Chicago</h2> <br>
-            <p>Na Califórnia de 1959, a popular Sandy e o metido Danny se apaixonam e aproveitam um verão inesquecível na praia. Quando voltam às aulas, eles descobrem que frequentam a mesma escola. Danny lidera a gangue do Burguer Palace Boys, um grupo que gosta de jaquetas de couro e muito gel no cabelo, e Sandy passa tempo com as Pink Ladies, lideradas pela firme e sarcástica Rizzo. Quando os dois se reúnem, Sandy percebe que Danny não é o mesmo por quem se apaixonou e, por isso, ambos precisam mudar caso queiram ficar juntos.</p> <br>
-            <p>Para a primeira adaptação oficial brasileira de Grease – o musical, Ricardo Marques (responsável pelas montagens oficiais tanto em São Paulo quanto em Londres) prepara um show recheado de hits eternizados no filme e algumas composições inéditas. Por aqui, a montagem ganha versão com músicas em português e, ao final da apresentação, o elenco voltará ao palco para uma grande festa em que cantará as principais canções nas versões originais em inglês.</p>
-          </div>
-          <div class="details">
-            <img src="https://www.arteview.com.br/wp-content/uploads/2022/01/Chicago-musical-emanuelle-araujo-teatro-santander.webp" class="image">
-            <div class="overlay">
-              <div class="text">
-                <p>Gêneros: <h5>Adulto, Criminal, Humor ácido</h5><div></p> <br>
-                  <img src="midia/icons8-heart-50.png" onclick="curtir('imgchicago')" id="imgchicago" style="width: 20px; height: 20px;">
-                  <p><span id="chicagoahearts">0</span> Curtidas</p>
-              </div>
+      </div>
+      <div id="sweeney">
+        <div class="details">
+          <img
+            src="https://assets.bileto.sympla.com.br/eventmanager/production/2p2rcdaeu7t0srnj9umlr4g2stg5qa491ebd2d7e1ks504t2ac0chrd38vl37vjalq1v7sk6rv3knhm6irq704nnv2gtje7cquh8jpd.webp"
+            alt="Avatar" class="image">
+          <div class="overlay">
+            <div class="text">
+              <p>Gêneros: Musical, Teatral, Terror, Criminal</p> <br>
+              <div>
+                <img src="midia/icons8-heart-50.png" onclick="curtir('imgsweeney')" id="imgsweeney"
+                  style="width: 25px; height: 25px;">
+                <p><span id="sweeneyhearts">0</span> Curtidas</p>
               </div>
             </div>
           </div>
         </div>
-        <div id="addams">
-          <div class="details">
-            <img src="https://observatoriodoteatro.uol.com.br/wp-content/uploads/2022/01/6CBC4181-C38A-4897-8DF0-31406BE1676B-e1643039168214.jpeg" alt="Avatar" class="image">
-            <div class="overlay">
-              <div class="text">
-                <p>Gêneros:<h5> Infatil, Sobrenatural, Comédia, Fantasia, Humor ácido</h5></p> <br>
-                <div>
-                    <img src="midia/icons8-heart-50.png" onclick="curtir('imgaddams')" id="imgaddams" style="width: 20px; height: 20px;">
-                    <p><span id="adammshearts">0</span> Curtidas</p>
-                </div>
+        <div class="texto">
+          <h2>Sweeney Todd</h2> <br>
+          <p>O musical conta a história de Benjamin Barker, barbeiro que se viu obrigado a ir embora de Londres por conta
+            de uma briga com o cruel Juiz Turpin (Guilherme Sant'Anna). Após 15 anos afastado da cidade ele retorna sob o
+            pseudônimo Sweeney Todd (Rodrigo Lombardi) e sedento por vingança. Ao chegar ao lugar onde funcionava sua
+            antiga barbearia, na Rua Fleet, Todd se depara com uma arruinada loja de tortas administrada pela Dona Lovett
+            (Andrezza Massei). A partir daí, Todd e Lovett unem forças para que ele se vingue de Turpin e ela, bem... para
+            que ela faça sua loja crescer com tortas recheadas de ingredientes muito suspeitos.</p>
+          <br>
+          <p>A adaptação para o país conta com direção musical de Fernanda Maia e direção geral de Zé Henrique de Paula. A
+            produção executiva é de Adriana Del Claro.</p>
+        </div>
+      </div>
+      <div>
+        <div class="texto">
+          <h2 id="chicago">Chicago</h2> <br>
+          <p>Na Califórnia de 1959, a popular Sandy e o metido Danny se apaixonam e aproveitam um verão inesquecível na
+            praia. Quando voltam às aulas, eles descobrem que frequentam a mesma escola. Danny lidera a gangue do Burguer
+            Palace Boys, um grupo que gosta de jaquetas de couro e muito gel no cabelo, e Sandy passa tempo com as Pink
+            Ladies, lideradas pela firme e sarcástica Rizzo. Quando os dois se reúnem, Sandy percebe que Danny não é o
+            mesmo por quem se apaixonou e, por isso, ambos precisam mudar caso queiram ficar juntos.</p> <br>
+          <p>Para a primeira adaptação oficial brasileira de Grease – o musical, Ricardo Marques (responsável pelas
+            montagens oficiais tanto em São Paulo quanto em Londres) prepara um show recheado de hits eternizados no filme
+            e algumas composições inéditas. Por aqui, a montagem ganha versão com músicas em português e, ao final da
+            apresentação, o elenco voltará ao palco para uma grande festa em que cantará as principais canções nas versões
+            originais em inglês.</p>
+        </div>
+        <div class="details">
+          <img
+            src="https://www.arteview.com.br/wp-content/uploads/2022/01/Chicago-musical-emanuelle-araujo-teatro-santander.webp"
+            class="image">
+          <div class="overlay">
+            <div class="text">
+              <p>Gêneros:
+              <h5>Adulto, Criminal, Humor ácido</h5>
+              <div>
+                </p> <br>
+                <img src="midia/icons8-heart-50.png" onclick="curtir('imgchicago')" id="imgchicago"
+                  style="width: 25px; height: 25px;">
+                <p><span id="chicagohearts">0</span> Curtidas</p>
               </div>
             </div>
           </div>
-          <div class="texto">
-            <h2>A Familia Addams</h2> <br>
-            <p>Protagonizada por Marisa Orth (Mortiça) e Daniel Boaventura (Gomez), a comédia musical é baseada nos personagens criados pelo cartunista Charles Addams, que mostrava uma estranha família norte-americana com afinidade por coisas macabras.</p>
-<br>
-              <p>Na atual temporada, a Família Addams protagoniza uma história original com a qual muitos pais podem se identificar. Wandinha, a filha mais velha de Gomez e Mortícia, que costumava ser a mais assustadora de todas, cresce e se apaixona por um jovem e doce rapaz. Contrário a tudo que a família acredita, o menino parece estar levando a garota para o bom caminho.</p>
+        </div>
+      </div>
+      <div id="addams">
+        <div class="details">
+          <img
+            src="https://observatoriodoteatro.uol.com.br/wp-content/uploads/2022/01/6CBC4181-C38A-4897-8DF0-31406BE1676B-e1643039168214.jpeg"
+            alt="Avatar" class="image">
+          <div class="overlay">
+            <div class="text">
+              <p>Gêneros:
+              <h5> Infatil, Sobrenatural, Comédia, Fantasia, Humor ácido</h5>
+              </p> <br>
+              <div>
+                <img src="midia/icons8-heart-50.png" onclick="curtir('imgaddams')" id="imgaddams"
+                  style="width: 25px; height: 25px;">
+                <p><span id="addamshearts">0</span> Curtidas</p>
+              </div>
+            </div>
           </div>
         </div>
+        <div class="texto">
+          <h2>A Familia Addams</h2> <br>
+          <p>Protagonizada por Marisa Orth (Mortiça) e Daniel Boaventura (Gomez), a comédia musical é baseada nos
+            personagens criados pelo cartunista Charles Addams, que mostrava uma estranha família norte-americana com
+            afinidade por coisas macabras.</p>
+          <br>
+          <p>Na atual temporada, a Família Addams protagoniza uma história original com a qual muitos pais podem se
+            identificar. Wandinha, a filha mais velha de Gomez e Mortícia, que costumava ser a mais assustadora de todas,
+            cresce e se apaixona por um jovem e doce rapaz. Contrário a tudo que a família acredita, o menino parece estar
+            levando a garota para o bom caminho.</p>
+        </div>
+      </div>
     </article>
 </body>
 </html>
